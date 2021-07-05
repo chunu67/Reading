@@ -200,19 +200,21 @@ DELETE FROM CUSTOMERS;
 
 # Create User and permission for `mysql` database.
 
-# *Creating user *
+### *Creating user*
 
 ``` shell
 MariaDB [(none)]> 
 
 CREATE USER 'user'@'localhost' IDENTIFIED BY 'password';
 ```
-# *Add Permissions for the user*
+### *Add Permissions for the user*
 
+```sql
 GRANT ALL PRIVILEGES ON * . * TO 'user'@'localhost';
+```
 
-# *Apply All The Chagement*
+### *Apply All The Chagement*
 
-```shell
+``` sql
 FLUSH PRIVILEGES;
 ```
