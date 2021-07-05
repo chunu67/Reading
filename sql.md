@@ -198,12 +198,21 @@ WHERE [condition];
 DELETE FROM CUSTOMERS;
 ```
 
-### Create User and permission for `mysql` database.
+# Create User and permission for `mysql` database.
+
+# *Creating user *
 
 ``` shell
 MariaDB [(none)]> 
 
 CREATE USER 'user'@'localhost' IDENTIFIED BY 'password';
+```
+# *Add Permissions for the user*
+
 GRANT ALL PRIVILEGES ON * . * TO 'user'@'localhost';
+
+# *Apply All The Chagement*
+
+```shell
 FLUSH PRIVILEGES;
 ```
