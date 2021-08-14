@@ -6,8 +6,9 @@ DESC TABLE;
 ```
 
 # CREATE 
-
+``` sql
 CREATE DATABASE DatabaseName; 
+```
 
 > Common look for creating of a table
 
