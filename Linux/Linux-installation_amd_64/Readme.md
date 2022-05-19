@@ -59,6 +59,9 @@
 	Download iso image file of any Operating System like Linux (Ubuntu,kali) as you want. Then create a Bootable USB From iso image File .
 	``` sh
 	$ sudo dd bs=4M if=Downloads/ubuntu-19.04-desktop-amd64.iso of=/dev/sdb conv=fdatasync 
+	```
+	dd if=hiveos-XXX.img of=/dev/sdX bs=10M status=progress 
+        sudo dd bs=4M if=Downloads/ubuntu-19.04-desktop-amd64.iso of=/dev/sdb conv=fdatasync status=progress
 
 	``` 
 	[ source ](https://www.howtogeek.com/414574/how-to-burn-an-iso-file-to-a-usb-drive-in-linux/)
